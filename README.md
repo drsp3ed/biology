@@ -1,5 +1,5 @@
 I will firstly explain how the code works before i write it
-(I mostly do it to myself just to check up on the instructions while i code)
+(I mostly do it for myself just to check up on the instructions while i code)
 
 Here is the algorithm:
 We have an entry field. User inputs number of specie A to the entry field. If user wants to input more, he pushes
