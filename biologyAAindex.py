@@ -133,7 +133,7 @@ def refresh() -> None:
 
 def save() -> None:
     f = open("biodiversity_index.txt", "w")
-    f.write(f"{lists}\nBiodiversity Index is equal to: {res.cget('text')}")
+    f.write(f"{lists}\n{res.cget('text')}")
     f.close()
 
     
