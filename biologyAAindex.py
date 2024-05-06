@@ -66,13 +66,15 @@ def new() -> None:
     name = nentry.get()
 
     try: 
-        if float(text) > 0:
+        if float(text) > 0 and name.strip() != "":
             l.append(float(entry.get()))
+            l2.append(name)
             label.configure(text="Continue to add species until you are done.")
-            if name.strip() != "":
-                l2.append(name.strip())
+
         elif float(text) < 0:
             label.configure(text="Amount of your species cannot be negative.")
+        elif name.strip() == "":
+            label.configure(text="Please, enter the name of your specie.")
         else:
             label.configure(text="If amount of this specie is 0, do not add it here.")  
 
